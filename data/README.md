@@ -10,6 +10,7 @@ This choice allows focusing on the full modeling pipeline while preserving the m
 ![Data](assets/Evolution_Mensuel_par_Categorie.png)
 
 
+
 ## Data Preparation
 
 Data preparation and feature engineering are performed in the data exploration notebook. The final modeling dataset is saved as `df_model_final.parquet`.
