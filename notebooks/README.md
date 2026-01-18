@@ -30,14 +30,10 @@ These differences justify the inclusion of category-level promotional indicators
 heterogeneous demand dynamics across categories.
 
 <p align="center">
-  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Ventes_Moyenne_avecETsans_Promo.png" height="280" width="45%" />
-  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Promo_Impact_boxplot.png" height="280" width="45%" />
+  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Ventes_Moyenne_avecETsans_Promo.png" height="280" />
+  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Promo_Impact_boxplot.png" height="280" />
 </p>
 
-
-
-
-![EDA2](https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Ventes_Moyenne_avecETsans_Promo.png)
 
 A comparison of average sales with and without promotions highlights the strong
 effect of promotional activities on demand.
@@ -58,9 +54,6 @@ demand uplift effects driven by promotional campaigns.
 
 Feature engineering aims to enrich the dataset with explanatory variables that
 capture demand dynamics, seasonality, price effects and promotional impacts.
-
-![FE1](https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Promo_Impact_boxplot.png)
-
 ### 1.2.1 Engineered Feature Categories
 
 The following feature groups are created:
