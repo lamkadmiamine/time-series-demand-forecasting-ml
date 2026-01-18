@@ -54,6 +54,21 @@ demand uplift effects driven by promotional campaigns.
 
 Feature engineering aims to enrich the dataset with explanatory variables that
 capture demand dynamics, seasonality, price effects and promotional impacts.
+
+## Diagnostic Summary (Feature Insights)
+
+| **Question / Test** | **Method** | **Result** | **Interpretation (Implication for Forecasting)** |
+|---|---|---|---|
+| **Do promotions explain sales?** | Mann-Whitney U test (log sales) + boxplot | **p-value < 0.05** (significant) | Promotion is a strong demand driver. Include `promo_flag` as a key feature. |
+| **Does price significantly impact sales?** | Spearman correlation (non-linear) | Moderate negative correlation | Price is informative. Use `sell_price` as a feature, potentially with non-linear transformations. |
+| **Is the effect linear or not?** | Spearman correlation (non-linear) | Non-linear pattern observed | Consider non-linear models (e.g., tree-based) or polynomial/interaction terms. |
+| **Is the effect different by category/department?** | Spearman correlation by `cat_id` | Variation across categories | Build category-specific models or include interactions (category × price/discount). |
+| **Does discount explain sales?** | Spearman correlation with `discount_pct` | Weak/negative correlation | Discount alone is not a stable driver; it is contextual. |
+| **Do exogenous variables explain the probability of selling?** | Logistic Regression (sold vs not sold) | Promo and price are significant predictors | Use a classification step or a hurdle model for zero-inflated sales. |
+| **What explains sales best?** | Combined insights | Promo + price + seasonality + category | Build forecasting features: `promo_flag`, `sell_price`, `seasonality`, `cat_id`, `dept_id`. |
+| **What is contextual?** | Observation from data | Discount appears when demand is low | `discount_pct` should be treated as **contextual** (not causal) and used cautiously. |
+
+
 ### 1.2.1 Engineered Feature Categories
 
 The following feature groups are created:
