@@ -30,8 +30,8 @@ These differences justify the inclusion of category-level promotional indicators
 heterogeneous demand dynamics across categories.
 
 <p align="center">
-  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Ventes_Moyenne_avecETsans_Promo.png" height="280"  />
-  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Promo_Impact_boxplot.png" height="280"  />
+  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Ventes_Moyenne_avecETsans_Promo.png" height="280" width="45%" />
+  <img src="https://github.com/lamkadmiamine/demand-planning-forecasting/blob/main/assets/Promo_Impact_boxplot.png" height="280" width="45%" />
 </p>
 
 
