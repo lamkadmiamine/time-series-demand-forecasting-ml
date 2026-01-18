@@ -69,8 +69,6 @@ capture demand dynamics, seasonality, price effects and promotional impacts.
 | **What is contextual?** | Observation from data | Discount appears when demand is low | `discount_pct` should be treated as **contextual** (not causal) and used cautiously. |
 
 
-### 1.2.1 Engineered Feature Categories
-
 The following feature groups are created:
 
 - **Zero-demand indicators**
